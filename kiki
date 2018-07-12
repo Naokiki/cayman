@@ -1,0 +1,1336 @@
+<!-----------------------------------------------------------------------
+Character Page [03]: Lionheart
+Made by glenthemes
+ 
+Initial release: 2017/02/09
+Last updated: 2017/02/09
+ 
+TERMS OF USE:
+1) Do not remove the page credit.
+2) Do not repost/redistribute my pages.
+3) Do not take parts of the code and use it as your own.
+4) Do not use my graphics from my pages.
+5) Do not use my pages as a base code.
+6) Do not integrate my codes together.
+ 
+For customization help, please visit:
+http://glenthemes.tumblr.com/lionheart
+ 
+Please respect theme makers and stick to my Terms. Enjoy.
+------------------------------------------------------------------------>
+ 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ 
+<head>
+ 
+<title>{Title}</title>
+ 
+<link rel="shortcut icon" href="{Favicon}">
+ 
+<!--------------------JAVASCRIPTS-------------------->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="//static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+<script>
+(function($){
+$(document).ready(function(){
+$("a[title]").style_my_tooltips({
+tip_follows_cursor:true,
+tip_delay_time:120,
+tip_fade_speed:120,
+attribute:"title"
+});
+});
+})(jQuery);
+</script>
+ 
+<link href="https://fonts.googleapis.com/css?family=Karla|Quicksand|Playfair+Display|Nunito|Rajdhani:400,500|Montserrat:300,400,500" rel="stylesheet">
+ 
+<link href="//dl.dropbox.com/s/50g6fbds3rh4m0j/saturnicons.css" rel="stylesheet">
+ 
+<link href="https://static.tumblr.com/gtjt4bo/JMXp40ccf/smoke.min.css" rel="stylesheet">
+ 
+<link href="https://static.tumblr.com/gtjt4bo/WBJp40bor/library.css" rel="stylesheet">
+ 
+<script src="https://static.tumblr.com/gtjt4bo/VfIp3v58k/winter.js"></script>
+ 
+<script src="https://static.tumblr.com/2pnwama/KGQp3tjff/fire.js"></script>
+ 
+<!-------------------------------------------------------------------->
+ 
+<style type="text/css">
+ 
+/*--------------------TOOLTIPS--------------------*/
+ 
+#s-m-t-tooltip {
+    padding:5px 10px;
+    margin:26px 9px 0px 15px;
+    background-color:#222; /* tooltip background color */
+    border-radius:5px; /* rounded tooltip */
+    font-family:Quicksand;font-weight:bold;
+    font-size:9px;
+    letter-spacing:1.3px;
+    text-transform:uppercase;
+    color:#ddd; /* tooltip text color */
+    z-index:99999999999999999999999999998!important;
+    max-width:40vw;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+ 
+/*--------------------TUMBLR CONTROLS--------------------*/
+ 
+iframe#tumblr_controls, .iframe-controls--desktop {
+    top:3px!important;
+    right:3px!important;
+    position:fixed!important;
+    opacity:0.6;
+    z-index:999999!important;
+    transition:0.3s ease-in-out;
+}
+ 
+iframe#tumblr_controls:hover, .iframe-controls--desktop:hover {
+    opacity:0.8;
+}
+ 
+/*--------------------DEFAULT SCROLLBAR--------------------*/
+ 
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #333;
+}
+ 
+/*-----------------TEXT ON HIGHLIGHT-----------------*/
+ 
+::selection {
+    background:#333; /* text highlight background color */
+    color:#ddd; /* text highlight color */
+}
+ 
+::-moz-selection {
+    background:#333; /* text highlight background color */
+    color:#ddd; /* text highlight color */
+}
+ 
+/*--------------------BASICS--------------------*/
+ 
+body {
+    background-color:#fdfdfd; /* background color */
+    background-image:url('https://static.tumblr.com/c0a4e7cc4f5c2882a7779a37b63132bf/2pnwama/qAaoy90vm/tumblr_static_c7ybwm57sv4k0s0kswccgoss0.png');
+    /* background image of your screen */
+    background-attachment:fixed;
+    background-repeat:repeat;
+    color:#999;
+    font-family:karla;
+    line-height:1.6em;
+    font-size:12px;
+}
+ 
+a {
+    text-decoration:none;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+ 
+/*--------------------CONTAINER--------------------*/
+#main {
+    position:fixed;
+    display:flex;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:calc((440px * 16 / 9) + 50px);
+    height:440px;
+    border:1px solid #f3f3f3; /* main container border */
+    box-shadow: 0px 0px 45px 0px rgba(0,0,0,0.045); /* main container shadow */
+}
+ 
+/*--------------------LEFT BAR--------------------*/
+ 
+#strip {
+    width:calc(64px + 20px + 20px);
+    height:inherit;
+    overflow-y:auto;
+    overflow-x:hidden;
+    z-index:4;
+}
+ 
+#strip, .poop {
+    background-color:#f9f9f9; /* left bar background color */
+}
+ 
+#strip::-webkit-scrollbar {
+    width:9px;
+    height:9px;
+}
+ 
+#strip::-webkit-scrollbar-thumb {
+    background-color:#999; /* left bar scrollbar */
+    border:4px solid #f9f9f9; /* left bar scrollbar background */
+}
+ 
+#strip::-webkit-scrollbar-track {
+    background:#f9f9f9; /* left bar scrollbar background */
+}
+ 
+#sect {
+    margin-top:95px;
+    margin-bottom:9px;
+}
+ 
+.adj {margin-left:20px;}
+ 
+.face {
+    margin:10px 0px;
+    width:64px;height:64px;
+    border-radius:100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+     -webkit-transition-timing-function: cubic-bezier(0.18, -0.25, 0.025, 1.85);
+    transition-timing-function: cubic-bezier(0.18, -0.25, 0.025, 1.85);
+    cursor:pointer;
+}
+ 
+.face:hover, .carrot:hover {transform:scale(1.1,1.1);}
+ 
+.carrot {
+    position:fixed;
+    margin-top:-55px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+     -webkit-transition-timing-function: cubic-bezier(0.18, -0.25, 0.025, 1.85);
+    transition-timing-function: cubic-bezier(0.18, -0.25, 0.025, 1.85);
+    cursor:pointer;
+    z-index:5;
+}
+ 
+.poop {
+    position:absolute;
+    bottom:100%;margin-bottom:-52px;
+    right:100%;margin-right:calc((-64px * 1.1) - 16.5px);
+    width:calc(64px * 1.1);height:52px;
+    z-index:4;
+}
+ 
+/* navigation button styling */
+.carrot .sf {
+    font-size:25px;
+    padding:21px 19px 14px 20px;
+    background-color:#222; /* button background color */
+    color:#ddd; /* button color */
+    border-radius:100%;
+}
+ 
+/*-----------------CHARACTER SECTION BASICS-----------------*/
+ 
+#silhouette {
+    width:470px;
+    height:inherit;
+    background-color:#f7f7f7; /* character section background color */
+    background-image:url('http://38.media.tumblr.com/tumblr_lsdjv9k5E21r2gm7fo4_400.jpg'); /* character section background image */
+    background-repeat:repeat;
+    overflow:hidden;
+    position:relative;
+}
+ 
+/*--------------------HEIGHT CHART--------------------*/
+ 
+/* height chart vertical line */
+.pillar {
+    width:2px;
+    height:410px;
+    margin-top:18px;
+    margin-left:calc((35px / 2) - 1px);
+}
+ 
+/* height chart lines positioning */
+/* I recommend not to touch this but you can if you want */
+.six0 {margin-top:14px;}
+.five11 {margin-top:28px;}
+.five10 {margin-top:40px;}
+.five9 {margin-top:54px;}
+.five8 {margin-top:66px;}
+.five7 {margin-top:80px;}
+.five6 {margin-top:92px;}
+.five5 {margin-top:106px;}
+.five4 {margin-top:118px;}
+.five3 {margin-top:132px;}
+.five2 {margin-top:144px;}
+.five1 {margin-top:158px;}
+.five0 {margin-top:170px;}
+.four11 {margin-top:184px;}
+.four10 {margin-top:196px;}
+.four9 {margin-top:210px;}
+.four8 {margin-top:222px;}
+.four7 {margin-top:236px;}
+.four6 {margin-top:248px;}
+.four5 {margin-top:262px;}
+.four4 {margin-top:274px;}
+.four3 {margin-top:288px;}
+.four2 {margin-top:300px;}
+.four1 {margin-top:314px;}
+.four0 {margin-top:326px;}
+.three11 {margin-top:340px;}
+.three10 {margin-top:352px;}
+.three9 {margin-top:366px;}
+.three8 {margin-top:378px;}
+.three7 {margin-top:392px;}
+.three6 {margin-top:404px;}
+.three5 {margin-top:418px;}
+ 
+.mug, .pillar {
+    position:absolute;
+    background-color:#111; /* height chart bar color */
+}
+ 
+.mug:nth-of-type(odd) {
+    width:35px;
+    height:1px;
+}
+ 
+.mug:nth-of-type(even) {
+    width:50px;
+    height:2px;
+}
+ 
+/* 'even' height indicator text styling */
+.mug:nth-of-type(even)::after {
+    position:absolute;
+    left:100%;
+    margin-left:5px;
+    margin-top:-5px;
+    line-height:1em;
+    font-family:Rajdhani;
+    font-weight:500;letter-spacing:0.5px;
+    font-size:13px;
+    color:#555; /* even height text color */
+}
+ 
+/* height indicator text */
+/* NOTE: when typing inches, use 2 single apostrophes instead of 1 double */
+/* your text goes inside the double apostrophes " " */
+.five10::after {content:"5'10''";}
+.five8::after {content:"5'8''";}
+.five6::after {content:"5'6''";}
+.five4::after {content:"5'4''";}
+.five2::after {content:"5'2''";}
+.five0::after {content:"5'0''";}
+.four10::after {content:"4'10''";}
+.four8::after {content:"4'8''";}
+.four6::after {content:"4'6''";}
+.four4::after {content:"4'4''";}
+.four2::after {content:"4'2''";}
+.four0::after {content:"4'0''";}
+.three10::after {content:"3'10''";}
+.three8::after {content:"3'8''";}
+.three6::after {content:"3'6''";}
+ 
+/*--------------------CENTRAL CHARACTER IMAGES--------------------*/
+ 
+/* individual character image adjustments */
+/* this part is especially important if you're using the height chart too */
+/* I recommend NOT adding a width, bc the width is auto */
+/* follow the pattern to edit the height for character 5, for example */
+/* so you would start with .chara5 for that */
+.chara1 {
+    display:block; /* this line applies to .chara1 ONLY */
+    height:366px;
+}
+ 
+.chara2 {
+    height:378px;
+}
+ 
+.chara3 {
+    height:390px;
+}
+ 
+.chara4 {
+    height:382px;
+}
+ 
+/*--------------------CHARACTER LABELS--------------------*/
+ 
+/* label positioning */
+/* follow the pattern to edit the positioning for character 5, for example */
+/* so you would start with .label5 for that */
+.label1 {
+    display:block; /* this line applies to .label1 ONLY */
+    margin-left:327px;
+    margin-top:95px;
+}
+ 
+.label2 {
+    margin-left:317px;
+    margin-top:82px;
+}
+ 
+.label3 {
+    margin-left:320px;
+    margin-top:72px;
+}
+ 
+.label4 {
+    margin-left:325px;
+    margin-top:90px;
+}
+ 
+/* indicator line styling */
+.name-line {
+    position:absolute;
+    right:100%;
+    margin-right:-3px; /* repositioning from the right */
+    margin-top:40px; /* repositioning from the top */
+    transform-origin:0% 100%;
+    transform:rotate(-20deg); /* indicator line angle */
+    width:45px; /* indicator line width */
+    height:1px; /* indicator line height */
+    background-color:#222; /* indicator line color */
+}
+ 
+/* indicator circle (at the end of the line) */
+.name-line::before {
+    content:"";
+    position:absolute;
+    right:100%;
+    margin-right:-2px;
+    margin-top:-2px;
+    width:5px; /* indicator dot width */
+    height:5px; /* indicator dot height */
+    background-color:#222; /* indicator dot color */
+    border-radius:100%;
+}
+ 
+/* label's top text styling */
+.top-text {
+    padding:5px 10px;
+    background-color:#222; /* top label text background */
+    border-radius:5px 5px 0px 0px;
+    font-family:Rajdhani;
+    font-weight:500;letter-spacing:1px;
+    text-transform:uppercase;line-height:1.2em;
+    font-size:13px;
+    color:#ddd; /* top label text */
+}
+ 
+/* label's bottom text styling */
+.bot-text {
+    margin-top:0px;
+    padding:4px 10px;
+    background-color:#fff; /* bottom label text background */
+    border-radius:0px 0px 5px 5px;
+    font-family:Rajdhani;
+    border-right:2px solid #221; /* bottom label right border */
+    border-bottom:2px solid #221; /* bottom label bottom border */
+    border-left:2px solid #221; /* bottom label left border */
+    font-weight:500;letter-spacing:0.5px;
+    text-transform:uppercase;line-height:1.2em;
+    font-size:9px;
+    color:#444; /* bottom label text color */
+}
+ 
+/*--------------------STATISTICS TABLES--------------------*/
+ 
+/* table positioning */
+/* follow the pattern and edit the positioning for character 5, for example */
+/* so you would start with .stats5 for that */
+.stats1 {
+    display:block; /* this line applies to .stats1 ONLY */
+    margin-left:290px;
+    margin-top:200px;
+}
+ 
+.stats2 {
+    margin-left:295px;
+    margin-top:195px;
+}
+ 
+.stats3 {
+    margin-left:293px;
+    margin-top:180px;
+}
+ 
+.stats4 {
+    margin-left:298px;
+    margin-top:200px;
+}
+ 
+#allstat table {
+    border-collapse:separate;
+    border-spacing:10px 0;
+}
+ 
+/* statistics table text styling */
+#allstat tbody {
+    font-family:Quicksand;
+    font-weight:bold;text-transform:uppercase;
+    letter-spacing:1px;
+    font-size:9px;
+}
+ 
+/* first column styling */
+#allstat td:first-of-type {
+    text-align:right;
+    color:#bbb;
+}
+ 
+/* second column styling */
+#allstat td:last-of-type {
+    text-align:left;
+    color:#666;
+}
+ 
+/* green text styling */
+/* you don't HAVE to use this */
+/* you can also add your own color spans if you want */
+/* in the HTML, you apply the green text like this: <green>...</green> */
+#allstat green {
+    color:#27c08d;
+}
+ 
+/*--------------------METER BARS--------------------*/
+ 
+/* meter bars' positioning */
+/* follow the pattern to change character 5's bar placements, for example */
+/* so you would start with .barstuff5 for that */
+.barstuff1 {
+    display:block; /* this line applies to .barstuff1 ONLY */
+    margin-left:355px;
+    margin-top:330px;
+}
+ 
+.barstuff2 {
+    margin-left:355px;
+    margin-top:330px;
+}
+ 
+.barstuff3 {
+    margin-left:355px;
+    margin-top:330px;
+}
+ 
+.barstuff4 {
+    margin-left:355px;
+    margin-top:330px;
+}
+ 
+.barstat {
+    margin-bottom:10px;
+    min-width:85px; /* maximum width of bar elements */
+}
+ 
+.barstat:last-child {margin-bottom:0px;}
+ 
+/* meter bar title */
+.bartit {
+    margin-right:-5px;
+    text-align:right;
+    font-family:Quicksand;
+    font-weight:bold;text-transform:uppercase;
+    line-height:1.7em;letter-spacing:1px;
+    font-size:8px;
+    color:#666;
+}
+ 
+.barholder {
+    margin-top:3px;
+    text-align:right;
+}
+ 
+/* meter bar styling */
+.bar-fill, .bar-empty {
+    display:inline-block;
+    margin:0px 3px;
+    width:10px;
+    height:20px;
+    background-color:#22a092; /* DEFAULT color of all characters' filled bars */
+    transform-origin:0% 100%;
+    transform:skew(-20deg);
+}
+ 
+/* the following lines are individual characters' meter bars' styling */
+/* format: " .barstuff(number) .bar-fill " */
+.barstuff1 .bar-fill {
+    background-color:#22a092; /* color of filled bars for 1st character */
+}
+ 
+.barstuff2 .bar-fill {
+    background-color:#e8c8a8; /* color of filled bars for 2nd character */
+}
+ 
+.barstuff3 .bar-fill {
+    background-color:#9ad8e7; /* color of filled bars for 3rd character */
+}
+ 
+.barstuff4 .bar-fill {
+    background-color:#dd4445; /* color of filled bars for 4th character */
+}
+ 
+/* color of ALL CHARACTERS' empty bars */
+/* you can tailor empty bar colors to different characters if you want */
+/* like in the example above */
+.bar-empty {
+    background-color:#151515; /* color of all empty bars */
+}
+ 
+/*--------------------VERTICAL/SIDEWAYS TEXT-------------------*/
+ 
+/* vertical text positioning */
+#torch {
+    position:fixed;
+    top:50%;
+    transform:translateY(-50%);
+    margin-left:-308px;
+    width:100%;
+}
+ 
+/* vertical text styling */
+#vertical {
+    transform:rotate(-90deg);
+    font-family:Rajdhani;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    text-align:center;
+    color:#666; /* vertical text color */
+}
+ 
+/* vertical text: bold */
+#vertical b {
+    font-family:montserrat;
+    font-weight:400;
+    font-size:11.5px;
+    letter-spacing:1px;
+    color:#444; /* vertical text bold color */
+}
+ 
+.line1 {display:block;}
+ 
+/*--------------------BIOGRAPHY SECTION--------------------*/
+ 
+#boba {
+    width:calc(100% - 104px - 470px);
+    height:inherit;
+    background-color:#fcfcfc; /* biography section background color */
+}
+ 
+#flavoring {padding:20px;}
+ 
+/* character title */
+#seaweed {
+    font-family:playfair display;
+    text-transform:uppercase;
+    line-height:1.15em;
+    font-size:25px;
+    color:#444; /* character title color */
+    border-left:1px solid black; /* character title left border */
+    padding-left:11px;
+    padding-bottom:3px;
+}
+ 
+.title1 {display:block;}
+ 
+/* main biography text */
+#fruit {
+    margin-top:15px;
+    max-height:273px;
+    padding-right:10px;
+    overflow:auto;
+    text-align:justify;
+    font-family:Nunito;
+    font-size:12px;
+    line-height:1.6em;
+}
+ 
+/* styling the FIRST LETTER of your biography text */
+#fruit:first-letter {
+    float:left;
+    margin-right:10px;
+    padding:9px 12px 12px 12px;
+    border:6px double #222;
+    font-family:playfair display;
+    text-transform:uppercase;
+    font-size:25px;
+    color:#222;
+}
+ 
+/* since the FIRST LETTER padding may not be the same for every letter, */
+/* you can create more styling for it */
+/* e.g.: if your character no. x bio starts with an I, it may be too thin */
+/* so style it beginning with ".tapiocax" like this: */
+/* replace x with the character no. */
+.tapiocax:first-letter {
+    float:left;
+    margin-right:10px;
+    padding:9px 8.5px 12px 9px; /* only this line (padding) changes */
+    /* to learn more about padding, go to this site: */
+    /* w3schools.com/css/tryit.asp?filename=trycss_padding_shorthand_4val */
+    border:6px double #222;
+    font-family:playfair display;
+    text-transform:uppercase;
+    font-size:25px;
+    color:#222;
+}
+ 
+#fruit p:last-child {margin-bottom:0px;}
+ 
+#fruit::-webkit-scrollbar {
+    width:9px;
+    height:9px;
+}
+ 
+#fruit::-webkit-scrollbar-thumb {
+    background-color:#888; /* biography section scrollbar itself */
+    border:4px solid #fcfcfc; /* biography section scrollbar background */
+}
+ 
+#fruit::-webkit-scrollbar-track {
+    background:#ddd; /* biography section scrollbar track */
+    border:4px solid #fcfcfc; /* biography section scrollbar background */
+}
+ 
+/* biography text link */
+#fruit a {
+    color:#222; /* biography link color */
+    border-bottom:0.5px solid #222; /* biography link border */
+}
+ 
+/* biography text link hover */
+#fruit a:hover {
+    color:#000; /* biography link color hover */
+    border-bottom:0.5px solid #000; /* biography link border hover */
+}
+ 
+.tapioca1 {display:block;}
+ 
+/* big link under bio text styling */
+#nav a {
+    margin-top:15px;
+    display:inline-block;
+    width:180px;
+    padding:12px 18px;
+    background-color:transparent; /* link under bio text: background color */
+    border:0.5px solid #888; /* link under bio text: border */
+    text-align: center;
+    font-family:montserrat;
+    font-weight:400;text-transform:uppercase;
+    letter-spacing:1.3px;line-height:1.6em;
+    font-size:9px;
+    color:#151515; /* link under bio text: link color */
+}
+ 
+#nav a:hover {
+    background-color:#151515; /* link under bio text: hover background color */
+    border:0.5px solid #151515; /* link under bio text: border hover */
+    color:#eee; /* link under bio text: link hover color */
+}
+ 
+.biglink1 {display:block;}
+ 
+/*--------------------POPUP NAVIGATION BOX--------------------*/
+ 
+#screen, #backing, #poppy {
+    display:none;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+ 
+/* navigation box background panel overlay */
+#screen {
+    width:calc((440px * 16 / 9) + 50px);
+    height:440px;
+    background-color:#fff; /* overlay color */
+    opacity:0.825; /* overlay transparency */
+    z-index:9;
+}
+ 
+#backing {width:100vw;height:100vh;z-index:10;}
+ 
+/* navigation box */
+#poppy {
+    width:450px;
+    padding:20px;
+    background-color:#fdfdfd; /* navigation box background */
+    border:1px solid #eee; /* navigation box border */
+    z-index:11;
+}
+ 
+/* navigation box custom links */
+.clinks {margin-left:5px;}
+ 
+.clinks a {
+    display:inline-block;
+    margin:5px;
+    width:80px;
+    padding:6px 9px;
+    background-color:#fefefe; /* custom links background */
+    border:0.5px solid #ddd; /* custom links border */
+    text-align:center;
+    font-family:Quicksand;font-weight:bold;
+    text-transform:uppercase;letter-spacing:2px;
+    font-size:10px;
+    color:#444; /* custom links color */
+}
+ 
+.clinks a:hover {
+    background-color:#222; /* custom links background hover */
+    border:0.5px solid #222; /* custom links border hover */
+    color:#ddd; /* custom links color hover */
+}
+ 
+/* navigation box "close" button */
+.close {
+    margin-left:50%;
+    transform:translateX(-50%);
+    display:inline-block;
+    margin-top:10px;
+    padding:6px 20px;
+    background-color:transparent; /* close button background */
+    border:0.5px solid #888; /* close button border */
+    text-align:center;
+    font-family:montserrat;
+    font-weight:400;text-transform:uppercase;
+    letter-spacing:1.3px;line-height:1.6em;
+    font-size:9px;
+    color:#222; /* close button text color */
+    cursor:pointer;
+}
+ 
+/*--------------------PAGE CREDIT--------------------*/
+ 
+/* do not remove */
+/* you MAY edit the colors and stuff but do not make it any smaller */
+#please-respect-theme-makers a {
+    position:fixed;
+    z-index:999999;
+    padding:7px 9px;
+    background-color:#fdfdfd;
+    border:1px solid #f7f7f7;
+    bottom:0;margin-bottom:15px;
+    right:0;margin-right:15px;
+    font-family:karla;
+    text-transform:uppercase;
+    line-height:1em;
+    text-align:center;
+    font-size:9px;
+    letter-spacing:1.3px;
+    color:#888;
+}
+ 
+</style>
+ 
+</head>
+ 
+<body>
+<!----PLEASE DO NOT REMOVE THE THEME CREDIT---->
+<div id="please-respect-theme-makers"><a href="http://glenthemes.tumblr.com" title="page by glenthemes">glenthemes</a></div>
+ 
+<!---------------------------------------------------------->
+ 
+<a class="out"><div id="backing"></div></a>
+<div id="screen"></div>
+<div id="poppy">
+    <div class="clinks">
+   
+    <!----YOUR CUSTOM LINKS GO HERE---->
+    <!----PLEASE DO NOT REMOVE THE THEME CREDIT LINK---->
+        <a href="/">index</a>
+        <a href="/ask">message</a>
+        <a href="/archive">archive</a>
+        <a href="http://glenthemes.tumblr.com" title="page by glenthemes">credit</a>
+        <a href="/">link 1</a>
+        <a href="/">link 2</a>
+        <a href="/">link 3</a>
+        <a href="/">link 4</a>
+        <a href="/">link 5</a>
+        <a href="/">link 6</a>
+        <a href="/">link 7</a>
+        <a href="/">etc</a>
+       
+    </div><!--do not delete this line-->
+   
+    <!----CLOSE NAVIGATION BOX BUTTON---->
+    <a class="close">return</a>
+ 
+</div><!--do not delete this line-->
+ 
+<!---------------------------------------------------------->
+ 
+<div id="lettuce">
+<div id="main">
+<div id="strip">
+<div class="adj">
+ 
+    <!----NAVIGATION BUTTON TOOLTIP---->
+    <a class="open" title="navigate">
+   
+    <div class="carrot">
+   
+    <!----NAVIGATION BUTTON ICON---->
+    <!--to change the icon, go to this website:-->
+    <!--saturnthms.com/font-->
+    <!--and scroll down to "Filters"-->
+    <span class="sf sf-deck-o"></span>
+   
+    </div><div class="poop"></div></a><!--do not delete this line-->
+   
+    <div id="sect">
+   
+    <!----SIDEBAR CHARACTER ICONS---->
+    <!--icon size is 64px-->
+    <!--change the number in "round1" to the corresponding character number-->
+    <!--e.g.: change "round1" to "round5" if you are on your 5th character-->
+    <!--to add a new character, copy the following:-->
+    <!-- START COPY -->
+    <a class="round1" title="character 1 icon tooltip">
+    <img class="face" src="https://68.media.tumblr.com/383e6a11bfb8f593ee2cb49f3bf86568/tumblr_oonpt6jtgz1utyy72o3_r2_250.png"></a>
+    <!-- END COPY -->
+   
+    <a class="round2" title="character 2 icon tooltip">
+    <img class="face" src="https://68.media.tumblr.com/d55e4c4635f36fea1d5758ce3875549a/tumblr_oontrn6ozG1utyy72o3_r1_250.png"></a>
+   
+    <a class="round3" title="character 3 icon tooltip">
+    <img class="face" src="https://68.media.tumblr.com/5ad068cc34e78550ec6dc7c64aa8288c/tumblr_ooo34tPzv61s4s960o1_r1_250.png"></a>
+   
+    <a class="round4" title="character 4 icon tooltip">
+    <img class="face" src="https://68.media.tumblr.com/2929948940d94f1747f13b6bbb31eb13/tumblr_oonpt6jtgz1utyy72o6_250.png"></a>
+   
+    </div><!--sect--><!--do not delete this line-->
+</div><!--adj--><!--do not delete this line-->
+</div><!--strip--><!--do not delete this line-->
+ 
+<!---------------------------------------------------------->
+ 
+<div id="silhouette">
+   
+    <!----HEIGHT CHART---->
+    <!--you can delete all this if you don't want the height chart-->
+    <div class="mug five11"></div>
+    <div class="mug five10"></div>
+    <div class="mug five9"></div>
+    <div class="mug five8"></div>
+    <div class="mug five7"></div>
+    <div class="mug five6"></div>
+    <div class="mug five5"></div>
+    <div class="mug five4"></div>
+    <div class="mug five3"></div>
+    <div class="mug five2"></div>
+    <div class="mug five1"></div>
+    <div class="mug five0"></div>
+    <div class="mug four11"></div>
+    <div class="mug four10"></div>
+    <div class="mug four9"></div>
+    <div class="mug four8"></div>
+    <div class="mug four7"></div>
+    <div class="mug four6"></div>
+    <div class="mug four5"></div>
+    <div class="mug four4"></div>
+    <div class="mug four3"></div>
+    <div class="mug four2"></div>
+    <div class="mug four1"></div>
+    <div class="mug four0"></div>
+    <div class="mug three11"></div>
+    <div class="mug three10"></div>
+    <div class="mug three9"></div>
+    <div class="mug three8"></div>
+    <div class="mug three7"></div>
+    <div class="mug three6"></div>
+    <div class="mug three5"></div>
+   
+    <div class="pillar"></div><!--height chart end-->
+   
+<!---------------------------------------------------------->
+   
+    <div id="torch">
+    <div id="vertical">
+   
+    <!----VERTICAL/SIDEWAYS TEXT---->
+    <!--change the number in "line1" to the corresponding character no.-->
+    <!--e.g.: change "line1" to "line5" if on your 5th character-->
+    <!-- START COPY -->
+    <div class="line1">
+    <b>some bolded text:</b> some normal text for 1
+    </div>
+    <!--END COPY-->
+   
+    <div class="line2">
+    <b>some bolded text:</b> some normal text for 2
+    </div>
+   
+    <div class="line3">
+    <b>some bolded text:</b> some normal text for 3
+    </div>
+   
+    <div class="line4">
+    <b>some bolded text:</b> some normal text for 4
+    </div>
+       
+    </div><!--vertical--><!--do not delete this line-->
+    </div><!--torch--><!--do not delete this line-->
+   
+<!---------------------------------------------------------->
+ 
+    <div id="pics">
+   
+    <!----CENTRAL CHARACTER IMAGES---->
+    <!--change the number in "chara1" to the corresponding character number-->
+    <!--e.g.: change "chara1" to "chara5" if you are on your 5th character-->
+    <!-- START COPY -->
+    <img class="chara1" src="https://78.media.tumblr.com/08e320e53552364eb34df1d907b2052a/tumblr_p3rfmrWWj51qg2f5co2_r2_1280.png">
+    <!-- END COPY -->
+   
+    <img class="chara2" src="https://78.media.tumblr.com/b31f1123b3be54a25357667c22e5b317/tumblr_p3rfmrWWj51qg2f5co4_r1_1280.png">
+   
+    <img class="chara3" src="https://78.media.tumblr.com/32b6a9467050356dd924ba8a0b0a9ca7/tumblr_p3rfmrWWj51qg2f5co1_r1_1280.png">
+   
+    <img class="chara4" src="https://78.media.tumblr.com/3d82f90bf5b000c6c03d6af566b079f5/tumblr_p3rfmrWWj51qg2f5co3_r2_1280.png">
+   
+    </div><!--pics--><!--do not delete this line-->
+   
+<!---------------------------------------------------------->
+   
+    <div id="beam">
+   
+    <!----CHARACTER NAME LABELS---->
+    <!--change the number in "label1" to the corresponding character number-->
+    <!--e.g.: change "label1" to "label5" if you are on your 5th character-->
+    <!-- START COPY -->
+    <div class="label1">
+        <div class="name-line"></div>
+        <div class="top-text">a name</div>
+        <div class="bot-text">a subtitle</div>
+    </div>
+    <!-- END COPY -->
+   
+    <div class="label2">
+        <div class="name-line"></div>
+        <div class="top-text">a name</div>
+        <div class="bot-text">a subtitle</div>
+    </div>
+   
+    <div class="label3">
+        <div class="name-line"></div>
+        <div class="top-text">a name</div>
+        <div class="bot-text">a subtitle</div>
+    </div>
+   
+    <div class="label4">
+        <div class="name-line"></div>
+        <div class="top-text">a name</div>
+        <div class="bot-text">a subtitle</div>
+    </div>
+   
+    </div><!--beam--><!--do not delete this line-->
+   
+<!---------------------------------------------------------->
+   
+    <div id="allstat">
+   
+    <!----CHARACTER STATISTICS TABLES---->
+    <!--change the number in "stats1" to the corresponding character number-->
+    <!--e.g.: change "stats1" to "stats5" if you are on your 5th character-->
+    <!--everything between <tr> and </tr> is ONE ROW-->
+    <!-- START COPY -->
+    <div class="stats1"><table><tbody><!--table starts here-->
+    <tr>
+    <td>left text</td>
+    <td>right text</td>
+    </tr>
+   
+    <tr>
+    <td>left text</td>
+    <td>right text</td>
+    </tr>
+   
+    <tr>
+    <td>left text</td>
+    <td>right text</td>
+    </tr>
+   
+    <tr>
+    <td>left text</td>
+    <td><green>I'm green!</green></td>
+    </tr>
+    </tbody></table></div><!--table ends here-->
+    <!-- END COPY -->
+   
+   
+    <div class="stats2"><table><tbody><!--table starts here-->
+    <tr>
+    <td>left text</td>
+    <td>right text</td>
+    </tr>
+   
+    <tr>
+    <td>left text</td>
+    <td>right text</td>
+    </tr>
+   
+    <tr>
+    <td>left text</td>
+    <td>right text</td>
+    </tr>
+   
+    <tr>
+    <td>left text</td>
+    <td><green>I'm green!</green></td>
+    </tr>
+    </tbody></table></div><!--table ends here-->
+   
+   
+    <div class="stats3"><table><tbody><!--table starts here-->
+    <tr>
+    <td>left text</td>
+    <td>right text</td>
+    </tr>
+   
+    <tr>
+    <td>left text</td>
+    <td>right text</td>
+    </tr>
+   
+    <tr>
+    <td>left text</td>
+    <td>right text</td>
+    </tr>
+   
+    <tr>
+    <td>left text</td>
+    <td><green>I'm green!</green></td>
+    </tr>
+    </tbody></table></div><!--table ends here-->
+   
+   
+    <div class="stats4"><table><tbody><!--table starts here-->
+    <tr>
+    <td>left text</td>
+    <td>right text</td>
+    </tr>
+   
+    <tr>
+    <td>left text</td>
+    <td>right text</td>
+    </tr>
+   
+    <tr>
+    <td>left text</td>
+    <td>right text</td>
+    </tr>
+   
+    <tr>
+    <td>left text</td>
+    <td><green>I'm green!</green></td>
+    </tr>
+    </tbody></table></div><!--table ends here-->
+   
+    </div><!--allstat--><!--do not delete this line-->
+   
+<!---------------------------------------------------------->
+   
+    <div id="berry">
+   
+    <!----CHARACTER METAR BARS---->
+    <!--change the number in "barstuff1" to the corresponding character no.-->
+    <!--e.g.: change "barstuff1" to "barstuff5" if on your 5th character-->
+    <!-- START COPY -->
+    <div class="barstuff1"><!--START METER BARS-->
+        <div class="barstat"><!--start one row-->
+            <div class="bartit">meter label</div>
+            <div class="barholder">
+                <div class="bar-fill"></div>
+                <div class="bar-empty"></div>
+                <div class="bar-empty"></div>
+                <div class="bar-empty"></div>
+                <div class="bar-empty"></div>
+            </div>
+        </div><!--end one row-->
+   
+        <div class="barstat"><!--start another row-->
+            <div class="bartit">meter label</div>
+            <div class="barholder">
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+            </div>
+        </div><!--end another row-->
+    </div><!--END METER BARS-->
+    <!-- END COPY -->
+   
+   
+   
+    <div class="barstuff2"><!--START METER BARS-->
+        <div class="barstat"><!--start one row-->
+            <div class="bartit">meter label</div>
+            <div class="barholder">
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+            </div>
+        </div><!--end one row-->
+   
+        <div class="barstat"><!--start another row-->
+            <div class="bartit">meter label</div>
+            <div class="barholder">
+                <div class="bar-fill"></div>
+                <div class="bar-empty"></div>
+                <div class="bar-empty"></div>
+                <div class="bar-empty"></div>
+                <div class="bar-empty"></div>
+            </div>
+        </div><!--end another row-->
+    </div><!--END METER BARS-->
+   
+   
+   
+    <div class="barstuff3"><!--START METER BARS-->
+        <div class="barstat"><!--start one row-->
+            <div class="bartit">meter label</div>
+            <div class="barholder">
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+            </div>
+        </div><!--end one row-->
+   
+        <div class="barstat"><!--start another row-->
+            <div class="bartit">meter label</div>
+            <div class="barholder">
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+                <div class="bar-empty"></div>
+                <div class="bar-empty"></div>
+            </div>
+        </div><!--end another row-->
+    </div><!--END METER BARS-->
+   
+   
+   
+    <div class="barstuff4"><!--START METER BARS-->
+        <div class="barstat"><!--start one row-->
+            <div class="bartit">meter label</div>
+            <div class="barholder">
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+                <div class="bar-empty"></div>
+            </div>
+        </div><!--end one row-->
+   
+        <div class="barstat"><!--start another row-->
+            <div class="bartit">meter label</div>
+            <div class="barholder">
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+                <div class="bar-fill"></div>
+                <div class="bar-empty"></div>
+            </div>
+        </div><!--end another row-->
+    </div><!--END METER BARS-->
+   
+   
+    </div><!--berry--><!--do not delete this line-->
+   
+</div><!--silhouette--><!--do not delete this line-->
+ 
+<!---------------------------------------------------------->
+ 
+<div id="boba">
+    <div id="flavoring">
+    <div id="seaweed">
+   
+    <!----CHARACTER TITLES (RIGHT HAND SIDE)---->
+    <!--change the number in "title1" to the corresponding character no.-->
+    <!--e.g.: change "title1" to "title5" if on your 5th character-->
+    <!--you can use <br> for a line break-->
+    <!--I recommend only having TWO lines-->
+   
+        <div class="title1">character<br>one</div>
+       
+        <div class="title2">character<br>two</div>
+       
+        <div class="title3">character<br>three</div>
+       
+        <div class="title4">character<br>four</div>
+       
+    </div><!--seaweed--><!--do not delete this line-->
+   
+<!---------------------------------------------------------->
+   
+    <div id="fruit">
+   
+        <!----SIDEBAR CHARACTER ICONS---->
+        <!--change the no. in "tapioca1" to the corresponding character no.-->
+        <!--e.g.: change "tapioca1" to "tapioca5" if on your 5th character-->
+       
+        <div class="tapioca1">
+        Some text about how awesome character 1 is!
+        </div><!--end of the text area-->
+       
+        <div class="tapioca2">
+        Some text about how awesome character 2 is!
+        </div><!--end of the text area-->
+       
+        <div class="tapioca3">
+        Some text about how awesome character 3 is!
+        </div><!--end of the text area-->
+       
+        <div class="tapioca4">
+        Some text about how awesome character 4 is!
+        </div><!--end of the text area-->
+   
+    </div><!--fruit--><!--do not delete this line-->
+   
+<!---------------------------------------------------------->
+   
+    <div id="nav">
+   
+        <!----BIG LINK UNDER BIOGRAPHY---->
+        <!--change the no. in "biglink1" to the corresponding character no.-->
+        <!--e.g.: change "biglink1" to "biglink5" if on your 5th character-->
+       
+        <div class="biglink1">
+        <a href="/">character 1 link name »</a></div>
+       
+        <div class="biglink2">
+        <a href="/">character 2 link name »</a></div>
+       
+        <div class="biglink3">
+        <a href="/">character 3 link name »</a></div>
+       
+        <div class="biglink4">
+        <a href="/">character 4 link name »</a></div>
+   
+    </div><!--nav--><!--do not delete this line-->
+    </div><!--flavoring--><!--do not delete this line-->
+</div><!--boba--><!--do not delete this line-->
+ 
+</div><!--main--><!--do not delete this line-->
+</div><!--lettuce--><!--do not delete this line-->
+ 
+ 
+</body>
+ 
+</html>
